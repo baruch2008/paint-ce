@@ -1,0 +1,77 @@
+<!-- Paint CE - popup.html -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Paint CE</title>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <style>
+      body {
+        padding: 15px;
+      }
+      button {
+        flex: 1;
+      }
+      #red_button {
+        background-color: #FF0000;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #green_button {
+        background-color: #00FF00;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #blue_button {
+        background-color: #0000FF;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #orange_button {
+        background-color: #FFA500;
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #stop_button {
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+      #reset_button {
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+      #color_container {
+        margin-bottom: 20px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div id="color_container" class="container">
+      <button id="red_button"></button>
+      <button id="green_button"></button>
+      <button id="blue_button"></button>
+      <button id="orange_button"></button>
+    </div>
+    <div id="control_container" class="container">
+      <button id="stop_button">Stop</button>
+      <button id="reset_button">Clear</button>
+    </div>
+  </body>
+</html>
